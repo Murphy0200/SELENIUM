@@ -1,7 +1,9 @@
 name: Node.js CI con Selenium
 
+
 # Define cuándo se ejecutará el flujo de trabajo.
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]  # Ejecutar en cada push a la rama main
   pull_request:
